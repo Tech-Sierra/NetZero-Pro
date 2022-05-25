@@ -8,7 +8,7 @@ import { styled } from "@mui/material/styles";
 
 const BootstrapButton = styled(Button)({
   color: "primary",
-  // backgroundColor: "#eff3f9",
+  backgroundColor: "#eff3f9",
   padding: "1rem 1.5rem",
   fontWeight: "bold",
   borderRadius: "1rem",
