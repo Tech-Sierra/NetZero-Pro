@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background-color: rgb(136, 136, 137);
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.main_container {
+  background-color: #eff3f9;
+}
