@@ -1,0 +1,46 @@
+.governance_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* grid-column-gap: 16px;
+  grid-row-gap: 16px; */
+  grid-gap: 1rem;
+}
+
+.womens_container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  position: relative;
+  box-shadow: 0px 4px 8px 0px #155ea233;
+}
+
+/* .complain_container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0px 4px 8px 0px #155ea233;
+  grid-area: 3 / 1 / 4 / 3;
+} */
+.header_title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 600;
+  width: 60%;
+}
+
+.action_button {
+  /* padding: 0.5rem 0 0; */
+  text-align: end;
+  background-color: #eff3f9;
+  border-radius: 10px;
+  border: 1px solid #32e7a4;
+  display: flex;
+  justify-content: end;
+}

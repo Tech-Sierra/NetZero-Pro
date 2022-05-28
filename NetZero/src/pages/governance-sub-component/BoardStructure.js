@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { Bar } from "react-chartjs-2";
-import { Button } from "@mui/material";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,6 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { Button } from "@mui/material";
 
 ChartJS.register(
   CategoryScale,
@@ -21,15 +21,21 @@ ChartJS.register(
   Legend
 );
 
-function Womens() {
-  const labels = ["FY 2018-19", "FY 2019-20", "FY 2020-21"];
+function BoardStructure() {
+  const labels = [
+    "Executive",
+    "Independent",
+    "Non-executive",
+    "Female",
+    " IT Sector exp",
+  ];
   const data = {
     labels,
     datasets: [
       {
-        backgroundColor: ["#32E7A4", "#04B1B4", "#155EA2"],
+        backgroundColor: "#64B5FC",
         borderColor: "rgb(255, 99, 132)",
-        data: [7.2, 14.4, 16, 17.8],
+        data: [2, 6, 1, 1, 6, 7],
         barThickness: 20,
       },
     ],
@@ -59,24 +65,24 @@ function Womens() {
       },
     },
   };
-
   return (
-    <div className="womens_container">
-      <div className="header_title">
-        <div className="title">
-          <p>Women in Management Positions</p>
-          <p>(including Junior, middle and senior management)</p>
+    <div>
+      <div className="womens_container">
+        <div className="header_title">
+          <div className="title">
+            <p>Board structure (as of March 31)</p>
+          </div>
+          <AiFillInfoCircle color="grey"></AiFillInfoCircle>
         </div>
-        <AiFillInfoCircle color="grey"></AiFillInfoCircle>
-      </div>
-      <div className="bar_chart">
-        <Bar options={options} data={data} />
-      </div>
-      <div className="action_button">
-        <Button className="">Take Action</Button>
+        <div className="bar_chart">
+          <Bar options={options} data={data} />
+        </div>
+        <div className="action_button">
+          <Button>Take Action</Button>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Womens;
+export default BoardStructure;

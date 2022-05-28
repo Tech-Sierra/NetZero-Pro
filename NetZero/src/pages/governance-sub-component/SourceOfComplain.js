@@ -1,7 +1,5 @@
 import React from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
-import { Bar } from "react-chartjs-2";
-import { Button } from "@mui/material";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,6 +9,8 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { Bar } from "react-chartjs-2";
+import { Button } from "@mui/material";
 
 ChartJS.register(
   CategoryScale,
@@ -21,20 +21,31 @@ ChartJS.register(
   Legend
 );
 
-function Womens() {
-  const labels = ["FY 2018-19", "FY 2019-20", "FY 2020-21"];
+function SourceOfComplain() {
+  const labels = [
+    "HR/People Process",
+    "COBCE/ Security Policy",
+    "Falsification/ Destruction of Information",
+    "Workplace Harassment",
+    "Others",
+  ];
   const data = {
     labels,
     datasets: [
       {
-        backgroundColor: ["#32E7A4", "#04B1B4", "#155EA2"],
-        borderColor: "rgb(255, 99, 132)",
-        data: [7.2, 14.4, 16, 17.8],
-        barThickness: 20,
+        label: "FY 2020-2021",
+        data: [9, 21, , 22, 5, 9, 34, 60],
+        backgroundColor: "#04B1B4",
+      },
+      {
+        label: "FY 2021-2022",
+        data: [4, 12, 34, 4, 12, 47],
+        backgroundColor: "#32E7A4",
       },
     ],
   };
   const options = {
+    indexAxis: "y",
     responsive: true,
     scales: {
       yAxes: [
@@ -55,17 +66,18 @@ function Womens() {
     },
     plugins: {
       legend: {
-        display: false,
+        display: "right",
       },
     },
   };
-
   return (
     <div className="womens_container">
       <div className="header_title">
         <div className="title">
-          <p>Women in Management Positions</p>
-          <p>(including Junior, middle and senior management)</p>
+          <p>
+            Grievance Redressal: Break-up of Complaints received through the
+            Ombuds Process
+          </p>
         </div>
         <AiFillInfoCircle color="grey"></AiFillInfoCircle>
       </div>
@@ -73,10 +85,10 @@ function Womens() {
         <Bar options={options} data={data} />
       </div>
       <div className="action_button">
-        <Button className="">Take Action</Button>
+        <Button>Take Action</Button>
       </div>
     </div>
   );
 }
 
-export default Womens;
+export default SourceOfComplain;

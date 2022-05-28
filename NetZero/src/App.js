@@ -3,6 +3,7 @@ import Navbar from "./componets/Navbar";
 import SideNavbar from "./componets/SideNavbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import SubNavbar from "./componets/SubNavbar";
+import Governance from "./pages/Governance";
 
 const theme = createTheme({
   palette: {
@@ -25,6 +26,7 @@ function App() {
           <div className="main_container">
             <Navbar></Navbar>
             <SubNavbar></SubNavbar>
+            <Governance></Governance>
           </div>
         </div>
       </div>
