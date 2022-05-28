@@ -1,10 +1,11 @@
 .governance_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   /* grid-column-gap: 16px;
   grid-row-gap: 16px; */
   grid-gap: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .womens_container {
@@ -15,13 +16,13 @@
   box-shadow: 0px 4px 8px 0px #155ea233;
 }
 
-/* .complain_container {
+.complain_container {
   padding: 1rem;
   background-color: white;
   border-radius: 0.2rem;
   box-shadow: 0px 4px 8px 0px #155ea233;
   grid-area: 3 / 1 / 4 / 3;
-} */
+}
 .header_title {
   display: flex;
   align-items: flex-start;
@@ -35,12 +36,12 @@
   width: 60%;
 }
 
+.bar_chart {
+  padding: 0.3rem 0;
+}
+
 .action_button {
-  /* padding: 0.5rem 0 0; */
-  text-align: end;
-  background-color: #eff3f9;
-  border-radius: 10px;
-  border: 1px solid #32e7a4;
   display: flex;
   justify-content: end;
+  padding: 0.3rem 0 0;
 }

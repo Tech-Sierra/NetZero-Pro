@@ -11,6 +11,7 @@ import {
   Legend,
 } from "chart.js";
 import { Button } from "@mui/material";
+import ActionButton from "./ActionButton";
 
 ChartJS.register(
   CategoryScale,
@@ -78,7 +79,7 @@ function BoardStructure() {
           <Bar options={options} data={data} />
         </div>
         <div className="action_button">
-          <Button>Take Action</Button>
+          <ActionButton></ActionButton>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ function SideNavbar() {
     <>
       <div className="sideNavbar_container">
         <img src={brand} alt="Brand logo" className="brand" />
-        <p>Amount</p>
+        <p>Governanace</p>
         <span className="line"></span>
         {/* <div className="buttons_container"> */}
         <BootstrapButton>

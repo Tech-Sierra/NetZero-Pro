@@ -11,6 +11,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { Button } from "@mui/material";
+import ActionButton from "./ActionButton";
 
 ChartJS.register(
   CategoryScale,
@@ -33,7 +34,7 @@ function OmbudsProcess() {
     datasets: [
       {
         label: "FY 2020-2021",
-        data: [9, 21, , 22, 5, 9, 34, 60],
+        data: [9, 50, , 22, 5, 9, 34, 55],
         backgroundColor: "#04B1B4",
       },
       {
@@ -84,7 +85,7 @@ function OmbudsProcess() {
         <Bar options={options} data={data} />
       </div>
       <div className="action_button">
-        <Button>Take Action</Button>
+        <ActionButton></ActionButton>
       </div>
     </div>
   );

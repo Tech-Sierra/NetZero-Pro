@@ -10,7 +10,9 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import ActionButton from "./ActionButton";
 import { Button } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 ChartJS.register(
   CategoryScale,
@@ -23,29 +25,31 @@ ChartJS.register(
 
 function SourceOfComplain() {
   const labels = [
-    "HR/People Process",
-    "COBCE/ Security Policy",
-    "Falsification/ Destruction of Information",
-    "Workplace Harassment",
-    "Others",
+    "Employee",
+    "Anonymous",
+    "Other",
+    "Vendor",
+    "Contract EMP",
+    "Client",
+    "Ex-Employees",
   ];
   const data = {
     labels,
     datasets: [
       {
         label: "FY 2020-2021",
-        data: [9, 21, , 22, 5, 9, 34, 60],
-        backgroundColor: "#04B1B4",
+        data: [845, 255, 57, 14, 2, 34, 80],
+        backgroundColor: "#32E7A4",
       },
       {
         label: "FY 2021-2022",
-        data: [4, 12, 34, 4, 12, 47],
-        backgroundColor: "#32E7A4",
+        data: [548, 150, 65, 10, 4, 1, 0],
+        backgroundColor: "#04B1B4",
       },
     ],
   };
   const options = {
-    indexAxis: "y",
+    indexAxis: "x",
     responsive: true,
     scales: {
       yAxes: [
@@ -71,7 +75,7 @@ function SourceOfComplain() {
     },
   };
   return (
-    <div className="womens_container">
+    <div className="complain_container">
       <div className="header_title">
         <div className="title">
           <p>
@@ -85,7 +89,7 @@ function SourceOfComplain() {
         <Bar options={options} data={data} />
       </div>
       <div className="action_button">
-        <Button>Take Action</Button>
+        <ActionButton></ActionButton>
       </div>
     </div>
   );
