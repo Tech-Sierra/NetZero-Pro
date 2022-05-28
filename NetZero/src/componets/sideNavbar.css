@@ -6,6 +6,7 @@
   background-color: #dae3f1;
   padding: 1rem;
   position: relative;
+  height: Auto;
 }
 
 .brand {
@@ -33,7 +34,7 @@
 .carbon_accounting {
   position: absolute;
   left: 1.5rem;
-  bottom: 1rem;
+  top: 80vh;
   display: flex;
   flex-direction: column;
 }
