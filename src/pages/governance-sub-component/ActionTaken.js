@@ -35,7 +35,7 @@ function ActionTaken() {
     datasets: [
       {
         label: "FY 2020-2021",
-        data: [9, 21, , 22, 5, 9, 34, 50],
+        data: [9, 21, 22, 5, 9, 34, 50],
         backgroundColor: "#04B1B4",
       },
       {

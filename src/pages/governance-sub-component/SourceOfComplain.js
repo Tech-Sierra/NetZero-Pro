@@ -12,7 +12,6 @@ import {
 import { Bar } from "react-chartjs-2";
 import ActionButton from "./ActionButton";
 import { Button } from "@mui/material";
-import { styled } from "@mui/material/styles";
 
 ChartJS.register(
   CategoryScale,

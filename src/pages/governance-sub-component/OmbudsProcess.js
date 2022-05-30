@@ -34,7 +34,7 @@ function OmbudsProcess() {
     datasets: [
       {
         label: "FY 2020-2021",
-        data: [9, 50, , 22, 5, 9, 34, 55],
+        data: [9, 50, 22, 5, 9, 34, 55],
         backgroundColor: "#04B1B4",
       },
       {

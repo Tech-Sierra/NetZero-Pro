@@ -9,7 +9,6 @@ import Select from "@mui/material/Select";
 import { FaBars } from "react-icons/fa";
 
 const BootstrapButton = styled(Button)({
-  color: "primary",
   marginRight: "1rem",
   backgroundColor: "#155EA2",
   minWidth: "3rem",
