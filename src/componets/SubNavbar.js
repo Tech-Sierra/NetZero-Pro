@@ -55,11 +55,9 @@ function SubNavbar() {
               S
             </Link>
           </BootstrapButton>
-          <BootstrapButton>
-            <Link to="" className="links">
-              G
-            </Link>
-          </BootstrapButton>
+          <Link to="" className="links">
+            <BootstrapButton>G</BootstrapButton>
+          </Link>
         </div>
         <div className="selectionTypes">
           <FormControl

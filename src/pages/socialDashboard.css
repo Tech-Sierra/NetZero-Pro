@@ -1,0 +1,15 @@
+.social_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-gap: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+.pie_one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.sc2 {
+  grid-area: 1 / 2 / 2 / 4;
+}
