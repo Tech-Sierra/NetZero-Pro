@@ -38,12 +38,12 @@ function SourceOfComplain() {
     datasets: [
       {
         label: "FY 2020-2021",
-        data: [845, 255, 57, 14, 2, 34, 80],
+        data: [845, 255, 57, 14, 19, 34, 80],
         backgroundColor: "#32E7A4",
       },
       {
         label: "FY 2021-2022",
-        data: [548, 150, 65, 10, 4, 1, 0],
+        data: [548, 150, 65, 10, 21, 15, 0],
         backgroundColor: "#04B1B4",
       },
     ],
@@ -78,10 +78,7 @@ function SourceOfComplain() {
     <div className="complain_container">
       <div className="header_title">
         <div className="title">
-          <p>
-            Grievance Redressal: Break-up of Complaints received through the
-            Ombuds Process
-          </p>
+          <p>Grievance Redressal: Source of Complaints</p>
         </div>
         <AiFillInfoCircle color="grey"></AiFillInfoCircle>
       </div>
