@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@mui/material";
 import "./subNavbar.css";
 import { styled } from "@mui/material/styles";
@@ -26,10 +26,20 @@ const BootstrapButton2 = styled(Button)({
 });
 
 function SubNavbar() {
-  const [age, setAge] = React.useState("");
+  const [organization, setOrganization] = useState("");
+  const [industry, setIndustry] = useState("");
+  const [facility, setFacility] = useState("");
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const handleChangeOrganization = (e) => {
+    setOrganization(e.target.value);
+  };
+
+  const handleChangeIndustry = (e) => {
+    setIndustry(e.target.value);
+  };
+
+  const handleChangeFacility = (e) => {
+    setFacility(e.target.value);
   };
   return (
     <div className="sub_navbar_container">
@@ -48,13 +58,13 @@ function SubNavbar() {
             <Select
               labelId="demo-select-small"
               id="demo-select-small"
-              value={age}
-              label="Age"
-              onChange={handleChange}
+              value={organization}
+              label="organization"
+              onChange={handleChangeOrganization}
             >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={10}>Apple</MenuItem>
+              <MenuItem value={20}>Tata</MenuItem>
+              <MenuItem value={30}>Uber</MenuItem>
             </Select>
           </FormControl>
           <FormControl
@@ -65,13 +75,13 @@ function SubNavbar() {
             <Select
               labelId="demo-select-small"
               id="demo-select-small"
-              value={age}
-              label="Age"
-              onChange={handleChange}
+              value={industry}
+              label="industry"
+              onChange={handleChangeIndustry}
             >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={10}>Auto-Mobile</MenuItem>
+              <MenuItem value={20}>Banking</MenuItem>
+              <MenuItem value={30}>Information Technology</MenuItem>
             </Select>
           </FormControl>
           <BootstrapButton2 variant="contained" color="success" size="small">
@@ -86,20 +96,20 @@ function SubNavbar() {
             sx={{ m: 1, width: 250, marginRight: "2rem" }}
             size="small"
           >
-            <InputLabel id="demo-select-small">Organization</InputLabel>
+            <InputLabel id="demo-select-small">Facility</InputLabel>
             <Select
               labelId="demo-select-small"
               id="demo-select-small"
-              value={age}
-              label="Age"
-              onChange={handleChange}
+              value={facility}
+              label="facility"
+              onChange={handleChangeFacility}
             >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={10}>Beta office</MenuItem>
+              <MenuItem value={20}>Alpha office</MenuItem>
+              <MenuItem value={30}>Sigma office</MenuItem>
             </Select>
           </FormControl>
-          <div className="years">
+          {/* <div className="years">
             <FormControl sx={{ m: 1, minWidth: 120 }}>
               <Select
                 value={age}
@@ -115,7 +125,7 @@ function SubNavbar() {
                 <MenuItem value={30}>Thirty</MenuItem>
               </Select>
             </FormControl>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
