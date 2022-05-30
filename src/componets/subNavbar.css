@@ -1,0 +1,30 @@
+.sub_navbar_container {
+  padding: 1rem;
+  background-color: #eff3f9;
+
+}
+
+.top_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cecece;
+}
+
+.selectionTypes {
+  display: flex;
+  align-items: center;
+}
+
+.bottom_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}

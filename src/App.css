@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: 180px auto;
+  background-color: rgb(136, 136, 137);
+}
+
+.app {
+  /* min-height: 100vh; */
+  /* width: 100vw; */
+}
+
+.main_container {
+  background-color: #eff3f9;
+}

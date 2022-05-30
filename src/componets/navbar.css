@@ -1,0 +1,13 @@
+.navbar_icons {
+  margin-right: 0.5rem;
+}
+
+.navbar_container {
+  background-color: white;
+  color: black;
+}
+
+.user_name {
+  font-size: 12px;
+  padding-right: 0.5rem;
+}
