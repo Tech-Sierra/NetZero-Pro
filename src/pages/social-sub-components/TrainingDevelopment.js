@@ -35,7 +35,7 @@ function TrainingDevelopment() {
       },
       {
         label: "Middle",
-        data: [, 17],
+        data: ["x", 17],
         backgroundColor: "#04B1B4",
       },
       {
