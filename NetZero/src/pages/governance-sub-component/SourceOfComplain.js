@@ -75,12 +75,14 @@ function SourceOfComplain() {
     },
   };
   return (
-    <div className="complain_container">
+    <div className=" chart_container complain_container">
       <div className="header_title">
         <div className="title">
           <p>Grievance Redressal: Source of Complaints</p>
         </div>
-        <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        <Button>
+          <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        </Button>
       </div>
       <div className="bar_chart">
         <Bar options={options} data={data} />

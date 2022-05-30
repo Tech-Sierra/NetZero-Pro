@@ -71,7 +71,7 @@ function OmbudsProcess() {
     },
   };
   return (
-    <div className="womens_container">
+    <div className="chart_container">
       <div className="header_title">
         <div className="title">
           <p>
@@ -79,7 +79,9 @@ function OmbudsProcess() {
             Ombuds Process
           </p>
         </div>
-        <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        <Button>
+          <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        </Button>
       </div>
       <div className="bar_chart">
         <Bar options={options} data={data} />

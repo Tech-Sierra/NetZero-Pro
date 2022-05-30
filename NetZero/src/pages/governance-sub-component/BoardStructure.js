@@ -68,12 +68,14 @@ function BoardStructure() {
   };
   return (
     <div>
-      <div className="womens_container">
+      <div className="chart_container">
         <div className="header_title">
           <div className="title">
             <p>Board structure (as of March 31)</p>
           </div>
-          <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+          <Button>
+            <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+          </Button>
         </div>
         <div className="bar_chart">
           <Bar options={options} data={data} />

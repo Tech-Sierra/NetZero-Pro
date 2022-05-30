@@ -62,13 +62,15 @@ function Womens() {
   };
 
   return (
-    <div className="womens_container">
+    <div className="chart_container">
       <div className="header_title">
         <div className="title">
           <p>Women in Management Positions</p>
           <p>(including Junior, middle and senior management)</p>
         </div>
-        <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        <Button>
+          <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        </Button>
       </div>
       <div className="bar_chart">
         <Bar options={options} data={data} />

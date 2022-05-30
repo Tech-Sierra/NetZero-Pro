@@ -1,28 +1,22 @@
 .governance_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
-  /* grid-column-gap: 16px;
-  grid-row-gap: 16px; */
   grid-gap: 1rem;
   padding: 0 1rem 1rem;
 }
 
-.womens_container {
+.chart_container {
   padding: 1rem;
   background-color: white;
-  border-radius: 0.2rem;
+  border-radius: 0.33rem;
   position: relative;
   box-shadow: 0px 4px 8px 0px #155ea233;
 }
 
 .complain_container {
-  padding: 1rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  box-shadow: 0px 4px 8px 0px #155ea233;
   grid-area: 3 / 1 / 4 / 3;
 }
+
 .header_title {
   display: flex;
   align-items: flex-start;
@@ -44,4 +38,5 @@
   display: flex;
   justify-content: end;
   padding: 0.3rem 0 0;
+ 
 }

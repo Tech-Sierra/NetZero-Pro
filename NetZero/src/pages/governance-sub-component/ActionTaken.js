@@ -74,12 +74,14 @@ function ActionTaken() {
 
   
   return (
-    <div className="womens_container">
+    <div className="chart_container">
       <div className="header_title">
         <div className="title">
           <p>Grievance Redressal: Type of action taken</p>
         </div>
-        <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        <Button>
+          <AiFillInfoCircle color="grey"></AiFillInfoCircle>
+        </Button>
       </div>
       <div className="bar_chart">
         <Bar options={options} data={data} />

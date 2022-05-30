@@ -14,7 +14,6 @@ function Governance() {
       <ActionTaken></ActionTaken>
       <OmbudsProcess></OmbudsProcess>
       <SourceOfComplain></SourceOfComplain>
-      {/* <ActionTaken></ActionTaken> */}
     </div>
   );
 }
