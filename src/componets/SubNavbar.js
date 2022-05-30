@@ -15,7 +15,7 @@ const BootstrapButton = styled(Button)({
   minWidth: "3rem",
   color: "white",
   "&:hover": {
-    backgroundColor: "none",
+    backgroundColor: "#155EA2",
     boxShadow: "none",
   },
 });
@@ -46,15 +46,13 @@ function SubNavbar() {
       <div className="top_bar">
         <div className="tabs">
           <BootstrapButton>
-            <Link to="/social" className="links">
+            <Link to="" className="links">
               E
             </Link>
           </BootstrapButton>
-          <BootstrapButton>
-            <Link to="/social" className="links">
-              S
-            </Link>
-          </BootstrapButton>
+          <Link to="/social" className="links">
+            <BootstrapButton>S</BootstrapButton>
+          </Link>
           <Link to="" className="links">
             <BootstrapButton>G</BootstrapButton>
           </Link>
