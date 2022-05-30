@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import "./subNavbar.css";
 import { styled } from "@mui/material/styles";
@@ -44,9 +45,21 @@ function SubNavbar() {
     <div className="sub_navbar_container">
       <div className="top_bar">
         <div className="tabs">
-          <BootstrapButton>E</BootstrapButton>
-          <BootstrapButton>S</BootstrapButton>
-          <BootstrapButton>G</BootstrapButton>
+          <BootstrapButton>
+            <Link to="/social" className="links">
+              E
+            </Link>
+          </BootstrapButton>
+          <BootstrapButton>
+            <Link to="/social" className="links">
+              S
+            </Link>
+          </BootstrapButton>
+          <BootstrapButton>
+            <Link to="" className="links">
+              G
+            </Link>
+          </BootstrapButton>
         </div>
         <div className="selectionTypes">
           <FormControl
