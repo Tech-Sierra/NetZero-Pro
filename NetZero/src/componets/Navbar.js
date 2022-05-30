@@ -97,35 +97,35 @@ function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "flex", color: "#155EA2" }}
+              sx={{ m: 1, color: "white", display: "flex", color: "#155EA2" }}
             >
               <MdSpaceDashboard className="navbar_icons"></MdSpaceDashboard>
               Dashboard
             </Button>
             <Button
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "flex", color: "#155EA2" }}
+              sx={{ m: 1, color: "white", display: "flex", color: "#155EA2" }}
             >
               <CgLoadbarSound className="navbar_icons"></CgLoadbarSound>
               Data Collection
             </Button>
             <Button
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "flex", color: "#155EA2" }}
+              sx={{ m: 1, color: "white", display: "flex", color: "#155EA2" }}
             >
               <BsCaretDownSquareFill className="navbar_icons"></BsCaretDownSquareFill>
               Reduction
             </Button>
             <Button
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "flex", color: "#155EA2" }}
+              sx={{ m: 1, color: "white", display: "flex", color: "#155EA2" }}
             >
               <AiOutlineAppstoreAdd className="navbar_icons"></AiOutlineAppstoreAdd>
               Offsetting
             </Button>
             <Button
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "flex", color: "#155EA2" }}
+              sx={{ m: 1, color: "white", display: "flex", color: "#155EA2" }}
             >
               <IoDocumentText className="navbar_icons"></IoDocumentText>
               Reporting
@@ -142,7 +142,7 @@ function Navbar() {
               </Button>
             ))}
           </Box> */}
-          <Button sx={{ color: "#155EA2" }}>
+          <Button sx={{ color: "#155EA2"}}>
             <RiInformationFill></RiInformationFill>
           </Button>
           <p className="user_name">Mayur</p>
