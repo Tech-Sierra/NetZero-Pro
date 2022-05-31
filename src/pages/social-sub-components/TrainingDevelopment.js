@@ -30,7 +30,7 @@ function TrainingDevelopment() {
     datasets: [
       {
         label: "Junior",
-        data: [77],
+        data: [71],
         backgroundColor: "#32E7A4",
       },
       {
