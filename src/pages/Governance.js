@@ -5,6 +5,7 @@ import OmbudsProcess from "./governance-sub-component/OmbudsProcess";
 import SourceOfComplain from "./governance-sub-component/SourceOfComplain";
 import Womens from "./governance-sub-component/Womens";
 import "./governance.css";
+import "./chart-component.css"
 
 function Governance() {
   return (

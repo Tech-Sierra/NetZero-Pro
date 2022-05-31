@@ -23,3 +23,10 @@
 .pie_two {
   grid-area: 1 / 4 / 2 / 5;
 }
+
+.social_doughnut {
+  grid-area: 2 / 1 / 3 / 5;
+  display: flex;
+  justify-content: flex-start;
+  height: 38vh;
+}
