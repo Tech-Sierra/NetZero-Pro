@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { Button } from "@mui/material";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Pie } from "react-chartjs-2";
 import ActionButton from "../governance-sub-component/ActionButton";
 
