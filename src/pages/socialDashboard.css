@@ -6,10 +6,20 @@
   padding: 0 1rem 1rem;
 }
 
+@media all and (max-width: 1300px) {
+  .social_container {
+    grid-template-columns: repeat(4, 250px);
+  }
+}
+
 .pie_one {
   grid-area: 1 / 1 / 2 / 2;
 }
 
 .sc2 {
   grid-area: 1 / 2 / 2 / 4;
+}
+
+.pie_two {
+  grid-area: 1 / 4 / 2 / 5;
 }
