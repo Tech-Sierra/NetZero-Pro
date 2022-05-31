@@ -1,5 +1,6 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
+
 import { AiFillInfoCircle } from "react-icons/ai";
 import { Button } from "@mui/material";
 import ActionButton from "../governance-sub-component/ActionButton";
@@ -28,7 +29,6 @@ function TypesTraining() {
         // hoverBackgroundColor: chartColors,
       },
     ],
-    text: "23%",
   };
 
   const options = {
@@ -51,6 +51,26 @@ function TypesTraining() {
       maintainAspectRatio: false,
     },
   };
+
+  const plugins = [
+    {
+      beforeDraw: function (chart) {
+        var width = chart.width,
+          height = chart.height,
+          ctx = chart.ctx;
+        ctx.restore();
+        var fontSize = (height / 180).toFixed(2);
+        ctx.font = fontSize + "em sans-serif";
+        ctx.textBaseline = "top";
+        var text = "13.11M",
+          textX = Math.round((width - ctx.measureText(text).width) / 2),
+          textY = height / 2.2;
+        ctx.fillText(text, textX, textY);
+        ctx.save();
+      },
+    },
+  ];
+
   return (
     <div className="chart_container social_doughnut">
       <div className="header_title">
@@ -61,11 +81,8 @@ function TypesTraining() {
           <AiFillInfoCircle color="grey"></AiFillInfoCircle>
         </Button>
       </div>
-      <div
-        className="bar_chart"
-        style={{ marginBottom: "0rem", height: "32vh" }}
-      >
-        <Doughnut data={data} options={options} />
+      <div className="bar_chart" style={{ height: "32vh" }}>
+        <Doughnut data={data} options={options} plugins={plugins} />
       </div>
     </div>
   );
