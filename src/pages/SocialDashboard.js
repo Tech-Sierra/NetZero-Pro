@@ -5,6 +5,7 @@ import TrainingDevelopment from "./social-sub-components/TrainingDevelopment";
 import "./socialDashboard.css";
 import "./chart-component.css";
 import TypesTraining from "./social-sub-components/TypesTraining";
+import HealthSafety from "./social-sub-components/HealthSafety";
 
 function SocialDashboard() {
   return (
@@ -13,6 +14,7 @@ function SocialDashboard() {
       <TrainingDevelopment></TrainingDevelopment>
       <NewHiringAge></NewHiringAge>
       <TypesTraining></TypesTraining>
+      <HealthSafety></HealthSafety>
     </div>
   );
 }

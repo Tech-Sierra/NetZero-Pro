@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .left_doughnut_information {
   display: flex;
 }
@@ -125,4 +126,33 @@
 .tg-0pky {
   display: flex;
   align-items: center;
+}
+
+/* health component  */
+.health_safety {
+  grid-area: 3 / 1 / 4 / 5;
+}
+
+.health_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.health_charts_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 3rem;
+}
+
+.health_chart_description {
+  grid-area: 2 / 5 / 3 / 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hori_line {
+  border-bottom: 1.5px solid #cecece;
 }
