@@ -18,7 +18,7 @@ function TypesTraining() {
     ],
     datasets: [
       {
-        data: [0.9, 1.8, 2, 0.6, 9],
+        data: [0.19, 1.8, 1.92, 0.6, 9],
         backgroundColor: [
           "#155EA2",
           "#FCEA64",
@@ -26,7 +26,6 @@ function TypesTraining() {
           "#04B1B4",
           "#64B5FC",
         ],
-        // hoverBackgroundColor: chartColors,
       },
     ],
   };
@@ -100,38 +99,38 @@ function TypesTraining() {
           >
             <colgroup>
               <col style={{ width: "295px" }} />
-              <col style={{ width: "26px" }} />
+              <col style={{ width: "35px" }} />
             </colgroup>
             <tbody>
               <tr className="tr-shade">
                 <td className="tg-0pky">
                   <p className="color box1"></p>Compliance training
                 </td>
-                <td className="tg-0laxl">22</td>
+                <td className="tg-0laxl">0.9</td>
               </tr>
               <tr>
                 <td className="tg-buh4">
                   <p className="color box2"></p>Fresher’s training
                 </td>
-                <td className="tg-buh5">12</td>
+                <td className="tg-buh5">1.8</td>
               </tr>
               <tr className="tr-shade">
                 <td className="tg-0lax">
                   <p className="color box3"></p>Lateral trainings (Technical)
                 </td>
-                <td className="tg-0laxl">21</td>
+                <td className="tg-0laxl">1.92</td>
               </tr>
               <tr>
                 <td className="tg-buh4">
                   <p className="color box4"></p>Behavioral training
                 </td>
-                <td className="tg-buh5">33</td>
+                <td className="tg-buh5">0.6</td>
               </tr>
               <tr className="tr-shade">
                 <td className="tg-0lax">
                   <p className="color box5"></p>Other E-learnings
                 </td>
-                <td className="tg-0laxl">12</td>
+                <td className="tg-0laxl">9</td>
               </tr>
             </tbody>
           </table>

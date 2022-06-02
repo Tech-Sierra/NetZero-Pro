@@ -3,6 +3,7 @@ import { AiFillInfoCircle } from "react-icons/ai";
 import { Button } from "@mui/material";
 import ActionButton from "../governance-sub-component/ActionButton";
 import HealthSafetyCharts from "./HealthSafetyCharts";
+import labels from "../../assets/images/labels.png";
 
 function HealthSafety() {
   return (
@@ -47,10 +48,8 @@ function HealthSafety() {
           data2="6556"
           data3="2189"
         ></HealthSafetyCharts>
-        <div className="IIR (excl personal transport)">
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
+        <div>
+          <img src={labels} alt="labels" width="140" />
         </div>
         <HealthSafetyCharts
           Xlabel="IIR (excl personal transport)"
