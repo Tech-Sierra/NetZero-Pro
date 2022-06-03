@@ -1,12 +1,16 @@
-.social_container {
+.social_charts_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   padding: 0 1rem 1rem;
 }
+.social_container {
+  display: flex;
+  flex-direction: column;
+}
 
 @media all and (max-width: 1300px) {
-  .social_container {
+  .social_charts_container {
     grid-template-columns: repeat(4, 250px);
   }
 }

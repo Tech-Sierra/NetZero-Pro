@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -94,13 +95,15 @@ function Navbar() {
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ m: 1, display: "flex", color: "#155EA2" }}
-            >
-              <MdSpaceDashboard className="navbar_icons"></MdSpaceDashboard>
-              Dashboard
-            </Button>
+            <Link to="/" className="links">
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ m: 1, display: "flex", color: "#155EA2" }}
+              >
+                <MdSpaceDashboard className="navbar_icons"></MdSpaceDashboard>
+                Dashboard
+              </Button>
+            </Link>
             <Button
               onClick={handleCloseNavMenu}
               sx={{ m: 1, display: "flex", color: "#155EA2" }}
@@ -115,13 +118,15 @@ function Navbar() {
               <BsCaretDownSquareFill className="navbar_icons"></BsCaretDownSquareFill>
               Reduction
             </Button>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ m: 1, display: "flex", color: "#155EA2" }}
-            >
-              <AiOutlineAppstoreAdd className="navbar_icons"></AiOutlineAppstoreAdd>
-              Offsetting
-            </Button>
+            <Link to="/off-setting" className="links">
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ m: 1, display: "flex", color: "#155EA2" }}
+              >
+                <AiOutlineAppstoreAdd className="navbar_icons"></AiOutlineAppstoreAdd>
+                Offsetting
+              </Button>
+            </Link>
             <Button
               onClick={handleCloseNavMenu}
               sx={{ m: 1, display: "flex", color: "#155EA2" }}

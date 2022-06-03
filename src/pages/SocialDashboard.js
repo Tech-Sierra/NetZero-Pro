@@ -6,15 +6,19 @@ import "./socialDashboard.css";
 import "./chart-component.css";
 import TypesTraining from "./social-sub-components/TypesTraining";
 import HealthSafety from "./social-sub-components/HealthSafety";
+import SubNavbar from "../componets/SubNavbar";
 
 function SocialDashboard() {
   return (
     <div className="social_container">
-      <MalesFemales></MalesFemales>
-      <TrainingDevelopment></TrainingDevelopment>
-      <NewHiringAge></NewHiringAge>
-      <TypesTraining></TypesTraining>
-      <HealthSafety></HealthSafety>
+      <SubNavbar></SubNavbar>
+      <div className="social_charts_container">
+        <MalesFemales></MalesFemales>
+        <TrainingDevelopment></TrainingDevelopment>
+        <NewHiringAge></NewHiringAge>
+        <TypesTraining></TypesTraining>
+        <HealthSafety></HealthSafety>
+      </div>
     </div>
   );
 }

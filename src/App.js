@@ -6,6 +6,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import SubNavbar from "./componets/SubNavbar";
 import Governance from "./pages/Governance";
 import SocialDashboard from "./pages/SocialDashboard";
+import OffSetting from "./pages/OffSetting";
 
 const theme = createTheme({
   palette: {
@@ -28,10 +29,11 @@ function App() {
             <SideNavbar></SideNavbar>
             <div className="main_container">
               <Navbar></Navbar>
-              <SubNavbar></SubNavbar>
+              {/* <SubNavbar></SubNavbar> */}
               <Routes>
                 <Route exact path="/" element={<Governance />} />
                 <Route exact path="/Social" element={<SocialDashboard />} />
+                <Route exact path="/off-setting" element={<OffSetting />} />
               </Routes>
             </div>
           </div>

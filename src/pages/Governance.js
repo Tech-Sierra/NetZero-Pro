@@ -5,16 +5,20 @@ import OmbudsProcess from "./governance-sub-component/OmbudsProcess";
 import SourceOfComplain from "./governance-sub-component/SourceOfComplain";
 import Womens from "./governance-sub-component/Womens";
 import "./governance.css";
-import "./chart-component.css"
+import "./chart-component.css";
+import SubNavbar from "../componets/SubNavbar";
 
 function Governance() {
   return (
     <div className="governance_container">
-      <Womens></Womens>
-      <BoardStructure></BoardStructure>
-      <ActionTaken></ActionTaken>
-      <OmbudsProcess></OmbudsProcess>
-      <SourceOfComplain></SourceOfComplain>
+      <SubNavbar></SubNavbar>
+      <div className="governance_charts_container">
+        <Womens></Womens>
+        <BoardStructure></BoardStructure>
+        <ActionTaken></ActionTaken>
+        <OmbudsProcess></OmbudsProcess>
+        <SourceOfComplain></SourceOfComplain>
+      </div>
     </div>
   );
 }
