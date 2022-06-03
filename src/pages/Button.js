@@ -13,10 +13,10 @@ const BootstrapButton = styled(Button)({
   height: "3rem",
   // margin: " 0 1rem",
 });
-function ActionButton() {
+function ActionButton(props) {
   return (
     <>
-      <BootstrapButton>Take Action</BootstrapButton>
+      <BootstrapButton>{props.buttonName}</BootstrapButton>
     </>
   );
 }

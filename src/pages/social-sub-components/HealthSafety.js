@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { Button } from "@mui/material";
-import ActionButton from "../governance-sub-component/ActionButton";
+import ActionButton from "../Button";
 import HealthSafetyCharts from "./HealthSafetyCharts";
 import labels from "../../assets/images/labels.png";
 
@@ -88,7 +88,7 @@ function HealthSafety() {
             </p>
           </div>
           <div className="action_button">
-            <ActionButton></ActionButton>
+            <ActionButton buttonName="Take action"></ActionButton>
           </div>
         </div>
       </div>

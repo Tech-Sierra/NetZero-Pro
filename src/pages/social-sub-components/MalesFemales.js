@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Pie } from "react-chartjs-2";
-import ActionButton from "../governance-sub-component/ActionButton";
+import ActionButton from "../Button";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -44,7 +44,7 @@ function MalesFemales() {
         <Pie data={data} option={option} plugins={[ChartDataLabels]}></Pie>
       </div>
       <div className="action_button">
-        <ActionButton></ActionButton>
+        <ActionButton buttonName="Take action"></ActionButton>
       </div>
     </div>
   );

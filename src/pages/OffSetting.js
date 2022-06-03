@@ -1,5 +1,5 @@
 import React from "react";
-import ActionButton from "./governance-sub-component/ActionButton";
+import ActionButton from "./Button";
 import "./offSetting.css";
 function OffSetting() {
   return (
@@ -16,7 +16,7 @@ function OffSetting() {
             a strong message to your community that you are committed to paving
             the way for a sustainable future.
           </p>
-          <ActionButton></ActionButton>
+          <ActionButton buttonName="offset Now"></ActionButton>
         </div>
         <div className="offsetting_images_container"></div>
         <div className="offfsetting_projects_carousel"></div>

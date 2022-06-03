@@ -1,4 +1,4 @@
-                         import React from "react";
+import React from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
 import {
   Chart as ChartJS,
@@ -11,7 +11,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { Button } from "@mui/material";
-import ActionButton from "./ActionButton";
+import ActionButton from "../Button";
 
 ChartJS.register(
   CategoryScale,
@@ -72,12 +72,11 @@ function ActionTaken() {
     },
   };
 
-  
   return (
     <div className="chart_container">
       <div className="header_title">
         <div className="title">
-          <p>Grievance Redressal: Type of action taken</p>
+          <p>Grievance Redressal: Type of Take action taken</p>
         </div>
         <Button>
           <AiFillInfoCircle color="grey"></AiFillInfoCircle>
@@ -87,7 +86,7 @@ function ActionTaken() {
         <Bar options={options} data={data} />
       </div>
       <div className="action_button">
-        <ActionButton></ActionButton>
+        <ActionButton buttonName="Take action"></ActionButton>
       </div>
     </div>
   );

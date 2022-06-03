@@ -11,7 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import ActionButton from "./ActionButton";
+import ActionButton from "../Button";
 
 ChartJS.register(
   CategoryScale,
@@ -76,7 +76,7 @@ function Womens() {
         <Bar options={options} data={data} />
       </div>
       <div className="action_button">
-        <ActionButton></ActionButton>
+        <ActionButton buttonName="Take action"></ActionButton>
       </div>
     </div>
   );

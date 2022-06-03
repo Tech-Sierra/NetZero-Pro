@@ -10,7 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import ActionButton from "./ActionButton";
+import ActionButton from "../Button";
 import { Button } from "@mui/material";
 
 ChartJS.register(
@@ -87,7 +87,7 @@ function SourceOfComplain() {
         <Bar options={options} data={data} />
       </div>
       <div className="action_button">
-        <ActionButton></ActionButton>
+        <ActionButton buttonName="Take action"></ActionButton>
       </div>
     </div>
   );

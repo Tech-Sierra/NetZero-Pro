@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { Button } from "@mui/material";
-import ActionButton from "../governance-sub-component/ActionButton";
+import ActionButton from "../Button";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 
@@ -43,7 +43,7 @@ function NewHiringAge() {
         <Pie data={data} option={option}></Pie>
       </div>
       <div className="action_button">
-        <ActionButton></ActionButton>
+        <ActionButton buttonName="Take action"></ActionButton>
       </div>
     </div>
   );

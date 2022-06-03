@@ -12,7 +12,7 @@ import {
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Bar } from "react-chartjs-2";
 import { Button } from "@mui/material";
-import ActionButton from "../governance-sub-component/ActionButton";
+import ActionButton from "../Button";
 
 ChartJS.register(
   CategoryScale,
@@ -86,7 +86,7 @@ function TrainingDevelopment() {
         <Bar options={options} data={data} plugins={[ChartDataLabels]} />
       </div>
       <div className="action_button">
-        <ActionButton></ActionButton>
+        <ActionButton buttonName="Take action"></ActionButton>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Doughnut } from "react-chartjs-2";
 
 import { AiFillInfoCircle } from "react-icons/ai";
 import { Button } from "@mui/material";
-import ActionButton from "../governance-sub-component/ActionButton";
+import ActionButton from "../Button";
 
 function TypesTraining() {
   const data = {
@@ -136,7 +136,7 @@ function TypesTraining() {
           </table>
         </div>
         <div className="action_button">
-          <ActionButton></ActionButton>
+          <ActionButton buttonName="Take Take action"></ActionButton>
         </div>
       </div>
     </div>
