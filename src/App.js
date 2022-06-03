@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./componets/Navbar";
 import SideNavbar from "./componets/SideNavbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import SubNavbar from "./componets/SubNavbar";
 import Governance from "./pages/Governance";
 import SocialDashboard from "./pages/SocialDashboard";
 import OffSetting from "./pages/OffSetting";

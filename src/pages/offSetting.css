@@ -6,8 +6,50 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem 0;
 }
 
 .offsetting_infomation_container {
   grid-area: 1 / 1 / 2 / 2;
+}
+
+.offsetting_images_container {
+  grid-area: 1 / 2 / 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 24px;
+}
+
+.offsetting_info {
+  padding: 2rem 0;
+}
+
+@media all and (max-width: 1440px) {
+  .offsetting_images {
+    width: 180px;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .offsetting_images {
+    width: 160px;
+  }
+  .offsetting_images_container {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .offsetting_info {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 1040px) {
+  .offsetting_images_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
