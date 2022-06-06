@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ActionButton from "./Button";
@@ -27,8 +28,11 @@ function OffSetting() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
-  
+
   return (
     <div className="offsetting_container">
       <div className="offsetting_header">Overview</div>
